@@ -1,0 +1,35 @@
+{
+  "name": "api-comparator",
+  "version": "1.0.0",
+  "description": "a library to compare the response list of api",
+  "main": "./dist/index.js",
+  "types": "dist/lib.d.ts",
+  "scripts": {
+    "init": "mkdir dist",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean && npm run init",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Helmon/api-comparator.git"
+  },
+  "author": "Helmon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Helmon/api-comparator/issues"
+  },
+  "homepage": "https://github.com/Helmon/api-comparator#readme",
+  "dependencies": {
+    "@babel/plugin-transform-typescript": "^7.7.2",
+    "axios": "^0.19.0"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^12.12.11",
+    "typescript": "^3.7.2"
+  }
+}
