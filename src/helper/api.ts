@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export interface IApi {
+interface IApi {
   data?: any;
   headers?: any;
   url: any;
