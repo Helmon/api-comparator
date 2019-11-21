@@ -24,11 +24,10 @@ export const api = ({ data, headers, url, method }: IApi) => {
     })
 
     .catch(error => {
-      const { status, statusText } = error.response;
-      if (error.response && error.response.data) {
+      if (error && error.response && error.response.data) {
+        const { status, statusText } = error.response;
         const { data } = error.response;
         return { status, statusText, data };
       }
-      return { status, statusText, data: null };
     });
 };
