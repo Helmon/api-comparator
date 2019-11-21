@@ -9,7 +9,7 @@
     "clean": "rm -rf dist",
     "prebuild": "npm run clean && npm run init",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,11 @@
     "dist/**/*"
   ],
   "devDependencies": {
+    "@types/jest": "^24.0.23",
     "@types/node": "^12.12.11",
+    "coveralls": "^3.0.8",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
     "typescript": "^3.7.2"
   }
 }

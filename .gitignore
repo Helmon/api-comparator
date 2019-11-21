@@ -7,6 +7,5 @@
 # misc
 .DS_Store
 .vscode/
-/data
 test.js
 /coverage
