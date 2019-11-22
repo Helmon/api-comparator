@@ -7,4 +7,6 @@
 # misc
 .DS_Store
 .vscode/
+
+# testing
 /coverage

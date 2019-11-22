@@ -51,6 +51,7 @@ describe("Positive Test Case for compareResponseUrl", () => {
 
 describe("Positive Test Case for compareApi", () => {
   test("return true for valid url", async () => {
+    jest.setTimeout(50000);
     await compareApi(
       fs.readFileSync("./data/file1.txt"),
       fs.readFileSync("./data/file2.txt")
